@@ -17,7 +17,6 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-   
     height: 100px;
     padding: 0 20px;
 }
@@ -26,6 +25,7 @@
     display: block;
 }
 
+/* Menú */
 #menu ul {
     list-style: none;
     padding: 0;
@@ -48,17 +48,23 @@
     color: red;
 }
 
+/* 🔹 Ajuste para el banner */
+.slider img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacios no deseados */
+}
+
 /* Botones */
-.icon img  {
+.icon img {
     max-width: 100%;
     height: auto;
-   
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .icon img:hover {
-    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
-    border-color: red; /* Cambiar el color del borde al pasar el mouse */
+    transform: scale(1.1);
+    border-color: red;
 }
 
 .icon a {
@@ -91,7 +97,6 @@
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    display: block;
     width: 60px;
     height: 60px;
     background-color: #25D366;
@@ -108,23 +113,14 @@ body {
     padding: 0;
 }
 
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    z-index: 1000;
-}
-
 .whatsapp-button img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    box-shadow: 0 4px 8px
+    box-shadow: 0 4px 8px;
 }
 
-/* Estilo para los enlaces en los botones */
+/* Botones personalizados */
 .custom-button {
     font-size: 12px;
     padding: 10px 20px;
@@ -144,27 +140,7 @@ body {
     color: white;
 }
 
-/* Estilo para los enlaces en los botones */
-.custom-button {
-    font-size: 12px;
-    padding: 10px 20px;
-    margin: 5px;
-    text-decoration: none;
-    border: 2px solid white;
-    border-radius: 5px;
-    background-color: transparent;
-    color: #054c8a;
-    text-align: center;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.custom-button:hover {
-    background-color: #054c8a;
-    color: white;
-}
-
-/* Estilo para la lista de enlaces */
+/* Lista de enlaces */
 ul.custom-list {
     list-style-type: none;
     padding: 0;
@@ -175,9 +151,7 @@ ul.custom-list li {
     margin: 5px;
 }
 
-
-
-/* Responsividad */
+/* 🔹 Responsividad */
 @media (max-width: 768px) {
     .icon {
         flex: 1 1 calc(33.33% - 20px);
